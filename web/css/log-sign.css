@@ -1,0 +1,440 @@
+*
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(230,230,230);
+}
+html, body
+{
+    width           : 100vw;
+    height          : 100vh;
+    margin          : 0 0;
+}
+body
+{
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+a
+{
+    color: black !important;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:focus
+{
+    background-color: rgba(87, 112, 224,0.5);
+    border-radius: 0 0 1.5vmin 1.5vmin;
+}
+::placeholder
+{
+    color: rgb(230,230,230);
+}
+::selection
+{
+    background-color: rgb(31, 40, 81);
+    color: rgb(230,230,230);
+    text-shadow: none;
+}
+input
+{
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+input:focus
+{
+    outline-width: 0;
+}
+h1 > span
+{
+    color: rgb(230,230,230);
+}
+.set-ic-in:hover
+{
+    color: rgb(87, 112, 224);
+    background-color: rgba(230, 230, 230, .66);
+}
+.input-confirm
+{
+    margin-bottom: 3vh !important;
+}
+.icon
+{
+    vertical-align: middle;
+}
+#background
+{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: inherit;
+    display: block;
+    position: relative;
+    min-height: 100%;
+}
+.real-container
+{
+    
+}
+#logo
+{
+    color: rgb(87, 112, 224);
+    text-shadow: 2px 2px 2px #000000;
+}
+#send:hover, #send-sign:hover
+{
+    color: rgb(87, 112, 224);
+    background-color: rgba(230, 230, 230, .66);
+}
+#send:disabled, #send-sign:disabled
+{
+    color: rgb(190, 190, 190);
+    background-color: rgba(31, 40, 81, .66);
+}
+
+/*
+    xxs
+    Very extra small devices (Horizontal phones, 350px and down)
+*/
+@media only screen and (max-height: 350px)
+{
+    
+}
+
+/*
+    xs
+    Extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 600px)
+{
+    #container
+    {
+        background-color: rgba(0, 0, 0, 0.33);
+        border-radius: 0;
+        height: 100%;
+        margin: 0;
+        position: relative;
+    }
+    #logo
+    {
+        height: auto;
+        font-size: 12vmin;
+        font-family: 'Lobster', cursive;
+        padding: 1.5vmin 0;
+        margin: 0;
+    }
+    #separator
+    {
+        height: 10vh;
+    }
+    #formulario
+    {
+        position: relative;
+        margin:0;
+        padding: 0;
+        height: 77vh;
+        width: 100%;
+    }
+    #titlePage
+    {
+        color: rgb(230,230,230);
+        position: relative;
+        padding: 4vh 0;
+        margin: 0;
+        font-size: 4vmin;
+    }
+    #form
+    {
+        height: 55.5vh;
+    }
+    #send
+    {
+        background-color: rgba(87, 112, 224, 0.77);
+        /*box-shadow: 2px 2px 3px black;*/
+        border: 0;
+        border-radius: 0;
+        bottom: 0;
+        display: block;
+        font-size: 4vmin;
+        left: 0;
+        margin: 8vh 0;
+        padding: 2.5vh 0;
+        position: absolute;
+        width: 100%;
+    }
+    #send-sign
+    {
+        background-color: rgba(87, 112, 224, 0.77);
+        /*box-shadow: 2px 2px 3px black;*/
+        border: 0;
+        border-radius: 0;
+        bottom: 0;
+        display: block;
+        font-size: 2.5vmin;
+        left: 0;
+        margin: 0;
+        padding: 3vh 0;
+        position: absolute;
+        width: 100%;
+    }
+    #alternativas
+    {
+        height: 9vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-top: 1px solid black;
+    }
+    .exp-half
+    {
+        width: 48% !important;
+    }
+    .set-ic-in
+    {
+        background-color: rgba(87, 112, 224, 0.77);
+        display: inline-block;
+        font-size: 3vh !important;
+        margin-bottom: 4vh;
+        padding: 2vh 1vw;
+        width: 100%;
+    }
+    .i-form
+    {
+        width: 90%;
+    }
+    .alternativas-btn
+    {
+        font-size: 4vmin;
+        padding: 2vh 0;
+    }
+    .sinCoincidencias
+    {
+        margin: 0;
+        padding: 0;
+        color: red;
+        font-size: 2vmin;
+    }
+}
+
+/*
+    sm
+    Small devices (portrait tablets and large phones, 600px and up)
+*/
+@media only screen and (min-width: 600px)
+{
+    #container
+    {
+        position: relative;
+        height: 90vh;
+        margin-top: 5vh;
+
+        background-color: rgba(0, 0, 0, 0.33);
+    }
+    #logo
+    {
+        height: auto;
+        font-size: 8vmin;
+        font-family: 'Lobster', cursive;
+        padding: 1.5vmin 0;
+        margin: 0;
+    }
+    #separator
+    {
+        height: 10vh;
+    }
+    #formulario
+    {
+        position: relative;
+        margin:0;
+        padding: 0;
+        height: 68vh;
+        width: 100%;
+    }
+    #titlePage
+    {
+        color: rgb(230,230,230);
+        position: relative;
+        padding: 4vh 0;
+        margin: 0;
+    }
+    #form
+    {
+        height: 55.5vh;
+    }
+    #send
+    {
+        background-color: rgba(87, 112, 224, 0.77);
+        /*box-shadow: 2px 2px 3px black;*/
+        border-radius: 0;
+        bottom: 0;
+        display: block;
+        font-size: 2.5vmin;
+        left: 0;
+        margin: 8vh 0;
+        padding: 2vh 0;
+        position: absolute;
+        width: 100%;
+    }
+    #send-sign
+    {
+        background-color: rgba(87, 112, 224, 0.77);
+        /*box-shadow: 2px 2px 3px black;*/
+        bottom: 0;
+        display: block;
+        font-size: 2.5vmin;
+        left: 0;
+        margin: 0;
+        padding: 2vh 0;
+        position: absolute;
+        width: 100%;
+    }
+    #alternativas
+    {
+        border-bottom-right-radius: 1vw;
+        border-bottom-left-radius: 1vw;
+        border-top: 1px solid black;
+        bottom: 0;
+        height: 9vh;
+        left: 0;
+        position: relative;
+        right: 0;
+    }
+    .exp-half
+    {
+        width: 48% !important;
+    }
+    .set-ic-in
+    {
+        background-color: rgba(87, 112, 224, 0.77);
+        /*box-shadow: 2px 2px 3px black;*/
+        display: inline-block;
+        font-size: 2vh !important;
+        margin-bottom: 4vh;
+        padding: 2vh 1vw;
+        width: 100%;
+    }
+    .i-form
+    {
+        width: 90%;
+    }
+    .alternativas-btn
+    {
+        font-size: 2.5vmin;
+        padding: 2.75vh 0;
+    }
+    .sinCoincidencias
+    {
+        margin: 0;
+        padding: 0;
+        color: red;
+        font-size: 2vmin;
+    }
+}
+
+/*
+    md
+    Medium devices (landscape tablets, 768px and up)
+*/
+@media only screen and (min-width: 768px)
+{
+    #send
+    {
+        border-radius: 1vmin;
+        left: 4vw;
+        padding: 1vh 0;
+        width: 25vw;
+    }
+    #send-sign
+    {
+        border-radius: 1vmin;
+        left: 4vw;
+        padding: 1vh 0;
+        width: 25vw;
+    }
+    .set-ic-in
+    {
+        border-radius: 1vmin;
+        display: inline-block;
+        padding: 1vh 1vw;
+        width: 25vw;
+    }
+    .i-form
+    {
+        width: 19vw;
+    }
+}
+
+/*
+    lg
+    Large devices (laptops/desktops, 992px and up)
+*/
+@media only screen and (min-width: 995px)
+{
+    #send
+    {
+        font-size: 3vmin;
+        left: 4.1vw;
+        margin: 6vmax 0;
+        padding: 1vh 1vw;
+        width: 16.5vw;
+    }
+    #send-sign
+    {
+        font-size: 3vmin;
+        left: 4.1vw;
+        padding: 1vh 1vw;
+        width: 16.5vw;
+    }
+    .set-ic-in
+    {
+        border-radius: 1vmin;
+        display: inline-block;
+        font-size: 3vh;
+        width: 17vw;
+    }
+    .i-form
+    {
+        width: 11vw;
+    }
+}
+
+/*
+    xl
+    Extra large devices (large laptops and desktops, 1200px and up)
+*/
+@media only screen and (min-width: 1200px)
+{
+    #send
+    {
+        left: 4vw;
+        margin: 7vh 0;
+        padding: 1vh 0;
+    }
+    #send-sign
+    {
+        left: 4vw;
+        padding: 1vh 0;
+    }
+    #alternativas
+    {
+        height: 8.9vh;
+    }
+    .set-ic-in
+    {
+        border-radius: 1vmin;
+        display: inline-block;
+    }
+    .i-form
+    {
+        width: 12vw;
+    }
+    .alternativas-btn
+    {
+        font-size: 2.25vmin;
+    }
+
+}

@@ -1,0 +1,64 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+#Violacion
+{
+    background-image: url(http://93.188.165.24/maps/maker/icon-aqua.png);
+}
+#Carterismo
+{
+    background-image: url(http://93.188.165.24/maps/maker/icon-blue.png);
+}
+#Asalto
+{
+    background-image: url(http://93.188.165.24/maps/maker/icon-brown.png);
+}
+#Robo
+{
+    background-image: url(http://93.188.165.24/maps/maker/icon-gren.png);
+}
+#Homicidio
+{
+    background-image: url(http://93.188.165.24/maps/maker/icon-orange.png);
+}
+#Reunion_maliciosa
+{
+    background-image: url(http://93.188.165.24/maps/maker/icon-red.png);
+}
+#Acoso
+{
+    background-image: url(http://93.188.165.24/maps/maker/icon-yellow.png);
+}
+.pin, .categoria
+{
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    height: 5vh;
+    font-size: 5vmin;
+    background-size: 5vmin;
+    display: inline-block;
+}
+.pin
+{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4vmin;
+}
+.dato
+{
+    height: 6vmin;
+    padding-bottom: 5vh;
+}
+.categoria
+{
+    width: 60vw;
+    text-align: left;
+}
+#container
+{
+    width: 100vw;
+    height: 100vh;
+}

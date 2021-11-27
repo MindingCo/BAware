@@ -1,0 +1,240 @@
+*
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+html, body
+{
+    width           : 100vw;
+    height          : 100vh;
+    margin          : 0 0;
+}
+body
+{
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+a
+{
+    color: black !important;
+    text-decoration: none;
+    display: inline-block;
+}
+input:focus
+{
+    outline-width: 0;
+}
+#logo, #log-out, #bottom-panel, #close_nomenclatura, #reportar
+{
+    color: rgb(250,250,250);
+    text-shadow: 2px 2px 2px #000000;
+}
+.expandable
+{
+    height: 100%;
+    width: 100%;
+}
+.expandable-half
+{
+    width: 49%;
+    height: 100%;
+}
+.icon
+{
+    color: rgb(250,250,250);
+    display: block;
+    padding: 1vmin 1vmax;
+}
+#map
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+#real-container
+{
+    z-index : 1;
+    height: 100%;
+    width: 100%;
+}
+#logo
+{
+    font-family: 'Lobster', cursive;
+    font-size: 5vmin;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 0.5vh;
+    left: 0.5vw;
+}
+#panel-lateral
+{
+    font-size: 3vmin;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 3px;
+}
+#log-out
+{
+    font-size: 4vmin;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+}
+
+
+
+#bottom-panel
+{
+    font-size: 3vmin;
+    height: auto;
+    width: auto;
+    padding: 0.5rem 0.5rem;
+    margin: 0;
+    position: absolute;
+    bottom: 0.2cm;
+    left: 48%;
+    right: 49%;
+}
+#reportar
+{
+    font-size: 3vmin;
+    height: auto;
+    width: auto;
+    padding: 0.5rem 0.5rem;
+    margin: 0;
+    position: absolute;
+    bottom: 0.2cm;
+    left: 90%;
+    right: 10%;
+}
+
+#nomenclatura
+{
+    top: 200vh;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 5;
+}
+#panel
+{
+    top: 0vh;
+    height: 100vh;
+    left: -200vw;
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+}
+#reporte
+{
+    top: 100vh;
+    height: 200vh;
+    position: absolute;
+    width: 80vw;
+    z-index: 6;
+}
+
+#frame-nomenclatura
+{
+    border-radius: 1vmin;
+    position: relative;
+    top: 60vh;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+#frame-panel
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+#frame-reporte
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    
+}
+#create-pin
+{
+    font-size: 2vmin;
+    padding: 0.5rem;
+    margin: 0;
+    position: absolute;
+    bottom: 0.2cm;
+    right: 0.2cm;
+}
+.iconLogOut
+{
+    position: absolute;
+    top: -3vh;
+    left: 0;
+    z-index: 1;
+    height: 4vmin;
+    width: 4vmin;
+}
+.logOut
+{
+    position: absolute;
+    top: -3vh;
+    left: 0;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    z-index: 2;
+    height: 4vmin;
+    width: 4vmin;
+}
+#filtros
+{
+    position: absolute;
+    top: -3vh;
+    right: 0;
+    z-index: 2;
+}
+
+
+/*
+    xs
+    Extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 600px)
+{
+    #frame-panel
+    {
+        background-color: rgba(0, 0, 0, 0.45);
+        border-radius: 0;
+        top: 10vh;
+        height: 80vh;
+        margin: 0;
+        position: relative;
+    }
+    #frame-nomenclatura
+    {
+        background-color: rgba(0, 0, 0, 0.45);
+        width: 95vw;
+    }
+}
+
+/*
+    sm
+    Small devices (portrait tablets and large phones, 600px and up)
+*/
+@media only screen and (min-width: 600px)
+{
+    #frame-panel
+    {
+        position: relative;
+        height: 90vh;
+        margin-top: 4vh;
+        border-radius: 1vw;
+        background-color: rgba(0, 0, 0, 0.45);
+        width: 25vw;
+    }
+}

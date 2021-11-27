@@ -1,0 +1,612 @@
+*
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(230,230,230);
+}
+html, body
+{
+    width           : 100%;
+    height          : 100%;
+    margin          : 0 0;
+}
+body
+{
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.nombre-punto, .eliminar-dato
+{
+    display: inline-block;
+}
+a
+{
+    color: black !important;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:focus
+{
+    background-color: rgba(87, 112, 224,0.5);
+    border-radius: 0 0 1.5vmin 1.5vmin;
+}
+::placeholder
+{
+    color: rgb(230,230,230);
+}
+::selection
+{
+    background-color: rgb(60, 78, 155);
+    color: rgb(230,230,230);
+    text-shadow: none;
+}
+input
+{
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+input:focus
+{
+    outline-width: 0;
+}
+h1 > span
+{
+    color: rgb(230,230,230);
+}
+.set-ic-in:hover
+{
+    color: rgb(87, 112, 224);
+    background-color: rgba(230, 230, 230, .66);
+}
+.input-confirm
+{
+    margin-bottom: 3vh !important;
+}
+.icon
+{
+    vertical-align: middle;
+}
+#background
+{
+    background-color: rgba(0,0,0,0);
+    filter: sepia(40%) grayscale(40%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#real-container
+{
+    z-index : 1;
+}
+#logo
+{
+    color: rgb(60, 78, 155);
+    text-shadow: 2px 2px 2px #000000;
+}
+#send:hover, #send-sign:hover
+{
+    color: rgb(87, 112, 224);
+    background-color: rgba(230, 230, 230, .66);
+}
+#send:disabled, #send-sign:disabled
+{
+    color: rgb(190, 190, 190);
+    background-color: rgba(60, 78, 155, .66);
+}
+
+/*
+    xs
+    Extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 600px)
+{
+    #container
+    {
+        border-radius: 0;
+        height: 100%;
+        margin: 0;
+        position: relative;
+    }
+    .line-separator
+    {
+        border: 0.5px solid rgba(0, 0, 0, 0.25);
+        height: 1px;
+        left: 5vw;
+        margin-top: 0;
+        position: relative;
+        width: 90vw;
+    }
+    #nav
+    {
+        font-size: 3vh;
+        height: 5vh;
+        margin: 0;
+        padding: 1vh 0;
+        width: 100%;
+    }
+    #back
+    {
+        display: inline-block;
+        left: 0;
+        padding-left: 1.5vw;
+        position: absolute;
+    }
+    #options
+    {
+        display: inline-block;
+    }
+    #section
+    {
+        height: 95vh;
+        position: absolute;
+        width: 100%;
+    }
+    #titlePage
+    {
+        color: rgb(230,230,230);
+        font-size: 6vmin;
+        margin: 0;
+        padding: 4vh 0;
+        position: relative;
+    }
+    #datos
+    {
+        margin-top: 5vh;
+        padding-right: 5vw;
+    }
+    #nickname
+    {
+
+        font-size: 8vmin;
+        font-weight: bolder;
+        padding-bottom: 0.5vh;
+        text-align: right;
+    }
+    #mail
+    {
+        font-size: 3vmin;
+        font-weight: lighter;
+        text-align: right;
+    }
+    #puntos-interes
+    {
+        height: 65vh;
+        margin-top: 5vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    #notificaciones
+    {
+        height: 75vh;
+        margin-top: 5vh;
+        overflow: auto;
+        top: -3.25vh;
+        position: relative;
+    }
+    #alternativas
+    {
+        height: 6vh;
+        margin-top: 1vh;
+        width: 100%;
+    }
+    #forms
+    {
+        height: 70vh;
+    }
+    #submit-update
+    {
+        font-size: 5vmin;
+        padding: 1.5vh;
+        width: 100vw;
+    }
+    #div-delete-account
+    {
+        height: 13vh;
+    }
+    #container-delete-account
+    {
+        height: 7vh;
+        padding: 3vh 0;
+    }
+    #delete-account
+    {
+        font-size: 5vmin;
+        margin: 3vh 0;
+        padding: 1.5vh;
+        width: 100vw;
+    }
+    .subTitlePage
+    {
+        color: rgb(230,230,230);
+        font-size: 5vmin;
+        font-weight: bolder;
+        margin: 0.5vh 0;
+        padding: 1vh 10vw;
+        position: relative;
+        text-align: left;
+    }
+    .second-titlePage
+    {
+        color: rgb(230,230,230);
+        font-size: 5vmin;
+        font-weight: bolder;
+        margin: 0.5vh 0;
+        padding: 1vh 10vw;
+        position: relative;
+        text-align: left;
+    }
+    .option
+    {
+        display: inline-block;
+        width: 10vw;
+    }
+    .punto-interes
+    {
+        font-size: 3.5vmin;
+        margin: 0.5vh 0;
+        padding: 1vh 5vw;
+        text-align: center;
+    }
+    .input-alter
+    {
+        border-radius: 2vmin;
+        display: inline-block;
+        font-size: 3.5vmin;
+        left: 20vw;
+        margin: 0;
+        padding: 2vh 2vw;
+        position: relative;
+        width: auto;
+    }
+    .nombre-punto
+    {
+        display: inline-block;
+        width: 79vw;
+    }
+    .icon-trash-can
+    {
+        position: relative;
+        right: 0;
+    }
+    .i-update
+    {
+        display: block;
+        font-size: 4vmin;
+        margin: 3vh 0;
+        width: 100vw;
+    }
+    .campos-form
+    {
+        height: 31.5vh;
+        margin: 0;
+    }
+    .exp-half
+    {
+        width: 48% !important;
+    }
+    .spacer
+    {
+        height: 1vh;
+    }
+    .mid-spacer
+    {
+        height: 2vh;
+    }
+}
+
+/*
+    sm
+    Small devices (portrait tablets and large phones, 600px and up)
+*/
+@media only screen and (min-width: 600px)
+{
+    #container
+    {
+        position: relative;
+        height: 90vh;
+        margin: 0;
+        border-radius: 1vw;
+    }
+    .line-separator
+    {
+        border: 0.5px solid rgba(0, 0, 0, 0.25);
+        height: 1px;
+        left: 5vw;
+        margin-top: 0;
+        position: relative;
+        width: 80%;
+    }
+    #nav
+    {
+        font-size: 3vh;
+        height: 5vh;
+        margin: 0;
+        padding: 1vh 0;
+        width: 100%;
+    }
+    #back
+    {
+        display: inline-block;
+        left: 0;
+        padding-left: 1.5vw;
+        position: absolute;
+    }
+    #options
+    {
+        display: inline-block;
+    }
+    #section
+    {
+        height: 95vh;
+        position: absolute;
+        width: 100%;
+    }
+    #titlePage
+    {
+        color: rgb(230,230,230);
+        font-size: 5.25vmin;
+        font-weight: bolder;
+        margin: 0;
+        padding: 4vh 0;
+        position: relative;
+    }
+    #datos
+    {
+        margin-top: 1vh;
+        padding-right: 2vw;
+    }
+    #nickname
+    {
+
+        font-size: 8vmin;
+        font-weight: bolder;
+        overflow: hidden;
+        padding-bottom: 0.5vh;
+        text-align: right;
+    }
+    #mail
+    {
+        font-size: 4vmin;
+        font-weight: lighter;
+        text-align: right;
+    }
+    #puntos-interes
+    {
+        height: 70vh;
+        margin-top: 5vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        text-align: center;
+    }
+    #notificaciones
+    {
+        height: 68vh;
+        margin-top: 5vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        top: -3.25vh;
+        position: relative;
+    }
+    #alternativas
+    {
+        height: 6vh;
+        margin-top: 1vh;
+        width: 100%;
+    }
+    #forms
+    {
+        height: 60vh;
+    }
+    #submit-update
+    {
+        font-size: 3.5vmin;
+        padding: 1.25vh;
+        position: relative;
+        top: -2vh;
+        width: 100%;
+    }
+    #div-delete-account
+    {
+        height: 13vh;
+    }
+    #container-delete-account
+    {
+        height: 7vh;
+        padding: 3vh 0;
+    }
+    #delete-account
+    {
+        font-size: 3.5vmin;
+        margin: 3vh 0;
+        padding: 1.15vh;
+        width: 100%;
+    }
+    .subTitlePage
+    {
+        color: rgb(230,230,230);
+        font-size: 4.125vmin;
+        font-weight: bolder;
+        margin: 0.5vh 0;
+        padding: 1vh 8vw;
+        position: relative;
+        text-align: left;
+    }
+    .second-titlePage
+    {
+        color: rgb(230,230,230);
+        font-size: 4.125vmin;
+        font-weight: bolder;
+        margin: 0.5vh 0;
+        padding: 1vh 5vw;
+        position: relative;
+        text-align: left;
+    }
+    .option
+    {
+        display: inline-block;
+        width: 8vw;
+    }
+    .punto-interes
+    {
+        font-size: 4.125vmin;
+        margin: 0.5vh 0;
+        padding: 1vh 5vw;
+        text-align: center;
+    }
+    .input-alter
+    {
+        border-radius: 2vmin;
+        display: inline-block;
+        font-size: 3.375vmin;
+        left: 0;
+        margin: 0;
+        padding: 2vh 2vw;
+        position: relative;
+    }
+    .nombre-punto
+    {
+        display: inline-block;
+        width: 82vw;
+    }
+    .icon-trash-can
+    {
+        position: relative;
+        right: 0;
+    }
+    .i-update
+    {
+        display: block;
+        font-size: 3.375vmin;
+        margin: 3vh 0;
+        width: 100%;
+    }
+    .campos-form
+    {
+        height: 27.5vh;
+        margin: 0;
+    }
+    .exp-half
+    {
+        width: 48% !important;
+    }
+    .spacer
+    {
+        height: 0vh;
+    }
+    .mid-spacer
+    {
+        height: 2vh;
+    }
+}
+
+/*
+    md
+    Medium devices (landscape tablets, 768px and up)
+*/
+@media only screen and (min-width: 768px)
+{
+    #titlePage
+    {
+        font-size: 3vmin;
+    }
+    #nickname
+    {
+        font-size: 3.5vmin;
+    }
+    #submit-update, #delete-account
+    {
+        font-size: 3vmin;
+    }
+    .subTitlePage
+    {
+        font-size: 2.25vmin;
+        padding-left: 7xvw;
+    }
+    .second-titlePage
+    {
+        font-size: 2.5vmin;
+        font-weight: bolder;
+        margin: 0.5vh   0;
+        padding: 1vh 2vw;
+        position: relative;
+        text-align: left;
+        width: 100%;
+    }
+    .punto-interes
+    {
+        font-size: 2vmin;
+    }
+    .nombre-punto
+    {
+        font-size: 2vmin;
+        width: 82vw;
+    }
+    .input-alter
+    {
+        left: 3vw;
+    }
+    .i-update
+    {
+        font-size: 1.75vmin;
+    }
+    .option
+    {
+        width: 8vw;
+    }
+}
+
+/*
+    lg
+    Large devices (laptops/desktops, 992px and up)
+*/
+@media only screen and (min-width: 995px)
+{
+    #datos
+    {
+        padding: 0 0.5vw;
+    }
+    #submit-update, #delete-account
+    {
+        font-size: 2vmin;
+    }
+    .option
+    {
+        width: 3vw;
+    }
+    .subTitlePage
+    {
+        padding: 1vh 3vw;
+    }
+    .punto-interes
+    {
+        padding: 1vh 1vw;
+    }
+    .input-alter
+    {
+        left: 2.5vw;
+        padding: 2vh 0;
+    }
+    
+}
+
+/*
+    xl
+    Extra large devices (large laptops and desktops, 1200px and up)
+*/
+@media only screen and (min-width: 1200px)
+{
+    .option
+    {
+        width: 3vw;
+    }
+    .input-alter
+    {
+        left: 5vw;
+        padding: 2vh 0;
+    }
+}
